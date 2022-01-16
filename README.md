@@ -18,9 +18,9 @@
 * If you wish to deploy and host the application in your personal Google Cloud project please configure your connection to your Google Cloud Account and project, and install the [gcloud console](https://cloud.google.com/sdk/docs/install). 
 
 * Navigate to each respective folder (backend/frontend/application root) and run the commands
-`gcloud app deploy backend.yaml`
-`gcloud app deploy frontend.yaml`
-`gcloud app deploy dispatch.yaml`
+1. `gcloud app deploy backend.yaml`
+2. `gcloud app deploy frontend.yaml`
+3. `gcloud app deploy dispatch.yaml`
 
 * You should now have the services visible and reachable in the Google Cloud App Engine (The command `gcloud app browse -s {{ frontend/backend }}` can be used to view the application directly in your browser.)
 
