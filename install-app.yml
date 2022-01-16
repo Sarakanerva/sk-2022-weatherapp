@@ -1,0 +1,14 @@
+- name: Install and Launch the Weather Application
+  hosts: localhost
+  tasks:
+
+       - name: Clone the app from a github repository
+         git:
+            repo: https://github.com/Sarakanerva/sk-2022-weatherapp.git
+            clone: yes
+            dest: {{ DESTINATION FOLDER }}
+            update: yes   
+
+       - name: Run with docker-compose
+         shell:
+            cmd: cd {{ DESTINATION FOLDER }} && docker-compose up --build

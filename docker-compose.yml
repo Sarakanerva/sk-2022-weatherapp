@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  weatherapp_backend:
+    build:
+      context: ./backend
+    image: weatherapp_backend
+    ports:
+        - 9000:9000
+    volumes:
+      - ./backend/src:/backend/src
+    environment:
+      APPID: {{ APPID }}
+
+  weatherapp_frontend:
+    build:
+      context: ./frontend
+    image:  weatherapp_frontend
+    ports:
+      - 8000:8000
+    volumes:
+      - ./frontend/src:/frontend/src
+    environment:
+        ENDPOINT: http://0.0.0.0:9000/api
+        

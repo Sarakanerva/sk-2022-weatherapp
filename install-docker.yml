@@ -1,0 +1,13 @@
+- name: Install docker
+  hosts: localhost
+  tasks:
+    - name: Install Docker
+      package:
+        name: docker
+        state: latest
+      become: no
+    - name: Install Docker-compose
+      package:
+        name: docker-compose
+        state: latest
+      become: no
