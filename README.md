@@ -14,7 +14,9 @@
 - The application frontend should now be reachable at localhost:8000
 - (Running the ansible playbook install-application.yml included in the repository with the command `ansible-playbook --connection=local install-application.yml -f 10 -v` will automate this whole process for you.)
 
+------------
 * Below we'll go through each chosen exercise and the steps taken towards their completion. 
+------------
 
 ### Docker
 
