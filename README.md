@@ -1,5 +1,19 @@
 # Weatherapp - Sara Kanerva's edits - 2022
 
+### Instructions on running the app
+
+- Start by cloning the repository
+
+		cd ~/{{ Wished destination }}
+		git clone {{ link to the repo}}
+    
+- Now you should have the repository cloned locally
+- Navigate to the repository folder
+- Insert your personal [API key]([gcloud console](https://cloud.google.com/sdk/docs/install) to the index.js file (or as a env variable)
+- Start the application locally by using the command `npm i && npm start`. Or by using the docker-compose file (add your API key to the file) with the command `docker-compose up --build`
+- The application frontend should now be reachable at localhost:8000
+- (Running the ansible playbook install-application.yml included in the repository with the command `ansible-playbook --connection=local install-application.yml -f 10 -v` will automate this whole process for you.)
+
 * Below we'll go through each chosen exercise and the steps taken towards their completion. 
 
 ### Docker
