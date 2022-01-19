@@ -1,0 +1,14 @@
+runtime: nodejs16
+service: frontend
+handlers:
+  - url: /
+    static_files: src/public/index.html
+    upload: src/public/index.html
+    secure: always
+  - url: /(.*)$
+    static_files: src/public/\1
+    upload: src/public/(.*)
+
+# TODO: Env variables could be passed here 
+# TODO: Problems with passing icon, problem could lie in the dispatch.yml
+
